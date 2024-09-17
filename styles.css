@@ -1,0 +1,142 @@
+.container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.main-title {
+    font-family: "Ultra", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5vw;
+    color: #7da8d1; 
+    padding: 0;
+    margin: 0;
+    text-shadow: 3px 3px #666666;
+}
+
+.calc-body {
+    background-color: #f0f0f0; 
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.sub-title {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vw;
+    background-color: #ffffff; 
+    margin: auto;
+    width: 90%;
+    border: 2px solid #ddd; 
+    color: rgb(103, 103, 103)
+}
+
+.numbers-container {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5%;
+}
+
+.btn {
+    height: 8vh;
+    width: 5vw;
+    margin: auto;
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #e6e6e6; 
+    border-radius: 10%;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #d2d2d2; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    /* Laptop */
+    .container {
+        width: 60%;
+    }
+
+    .main-title {
+        font-size: 3vw;
+    }
+
+    .calc-body {
+        width: 80%;
+    }
+
+    .btn {
+        width: 6vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* iPad */
+    .container {
+        width: 80%;
+    }
+
+    .main-title {
+        font-size: 4vw;
+    }
+
+    .calc-body {
+        width: 90%;
+    }
+
+    .btn {
+        width: 8vw;
+    }
+
+    .sub-title {
+        font-size: 2.5vw; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile */
+    .container {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 5vw;
+    }
+
+    .calc-body {
+        width: 100%;
+        height: 55%;
+    }
+
+    .btn {
+        width: 15vw; 
+        height: 8vh;
+        font-size: smaller;
+    }
+
+    .sub-title {
+        font-size: 4vw; 
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="main-title">
+            <h1 class="title">Calculator</h1>
+        </div>
+
+        <div class="calc-body">
+            <div class="sub-title">
+                <h3>Start Calculating</h3>
+            </div>
+
+            <div class="numbers-container">
+                <button class="btn seven">7</button>
+                <button class="btn eight">8</button>
+                <button class="btn nine">9</button>
+                <button class="btn delete">Delete</button>
+
+                <button class="btn four">4</button>
+                <button class="btn five">5</button>
+                <button class="btn six">6</button>
+                <button class="btn multiply" onclick="setOperation('*')">x</button>
+
+                <button class="btn one">1</button>
+                <button class="btn two">2</button>
+                <button class="btn three">3</button>
+                <button class="btn subtract" onclick="setOperation('-')">-</button>
+
+                <button class="btn zero">0</button>
+                <button class="btn add" onclick="setOperation('+')">+</button>
+                <button class="btn divide" onclick="setOperation('/')">/</button>
+                <button class="btn equal" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.js" charset="UTF-8"></script>    
+</body>
+</html>
